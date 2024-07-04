@@ -27,7 +27,6 @@ debug
 general
 ***********************/
 .container{
-    max-height: 1000px;
     margin: 0 auto;
 }
 
