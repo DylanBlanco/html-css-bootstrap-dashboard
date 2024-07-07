@@ -4,9 +4,12 @@ reset
 :root {
     --header-height: 60px;
     --aside-width: 100px;
-    --top-main-height: 80px;
+    --top-main-height: 100px;
     --aside-color: #01012f;
     --main-color: #c9c7c7;
+}
+li {
+    font-size: 14px;
 }
 
 /***********************
@@ -21,6 +24,12 @@ body main > main {
 
 body main aside li {
     color: white;
+}
+main main .top-main li {
+    color: white;
+}
+main main .top-main .color-bg-top-main {
+    background-color: #1558bc;
 }
 /***********************
 general
@@ -47,6 +56,12 @@ main main .top-main {
 main main .bottom-main {
     height: calc(100% - var(--top-main-height));
 }
+main main .top-main .color-bg-top-main {
+    border-radius: 10px;
+}
+main aside .screen-none {
+    display: none;
+}
 /***********************
 header
 ***********************/
@@ -56,5 +71,16 @@ main
 ***********************/
 
 /***********************
-footer
+RESPONSIVE
 ***********************/
+@media screen and (max-width: 768px) {
+    body main aside {
+        width: 60px;
+    }
+    main aside .screen-block {
+        display: none;
+    }
+    main aside .screen-none {
+        display: block;
+    }
+}
