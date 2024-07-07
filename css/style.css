@@ -7,6 +7,9 @@ reset
     --top-main-height: 120px;
     --aside-color: #01012f;
     --main-color: #c9c7c7;
+    --color-bg-top-main: #1966d9;
+    --color-bg-bottom-main: #C8C7C7;
+    --color-bg-top-p: #1552ad;
 }
 main li {
     font-size: 14px;
@@ -25,11 +28,18 @@ body main > main {
 body main aside li {
     color: white;
 }
-main main .top-main li {
+main main .top-main li span {
     color: white;
+    background-color: var(--color-bg-top-p);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
 }
-main main .top-main .color-bg-top-main {
-    background-color: #1558bc;
+main main .top-main {
+    background-color: var(--color-bg-top-main);
+}
+main main .bottom-main {
+    background-color: var(--color-bg-bottom-main);
 }
 /***********************
 general
@@ -45,7 +55,7 @@ ul {
     gap: 30px;
 }
 body > main {
-    height: calc(100vh - var(--header-height));
+    height: calc(100% - var(--header-height));
 }
 body main > aside {
     width: var(--aside-width);
@@ -58,9 +68,6 @@ main main .top-main {
 }
 main main .bottom-main {
     height: calc(100% - var(--top-main-height));
-}
-main main .top-main .color-bg-top-main {
-    border-radius: 10px;
 }
 main .screen-none {
     display: none;
