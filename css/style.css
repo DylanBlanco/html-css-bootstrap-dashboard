@@ -3,12 +3,12 @@ reset
 ***********************/
 :root {
     --header-height: 60px;
-    --aside-width: 100px;
-    --top-main-height: 100px;
+    --aside-width: 120px;
+    --top-main-height: 120px;
     --aside-color: #01012f;
     --main-color: #c9c7c7;
 }
-li {
+main li {
     font-size: 14px;
 }
 
@@ -37,6 +37,9 @@ general
 .container {
     height: var(--header-height);
 }
+img {
+    max-width: 100%;
+}
 ul {
     list-style: none;
     gap: 30px;
@@ -61,6 +64,22 @@ main main .top-main .color-bg-top-main {
 }
 main .screen-none {
     display: none;
+}
+
+.left-section {
+    width: 70%;
+}
+.right-section {
+    width: 30%;
+}
+main .bottom-main .left-section p {
+    font-size: 12px;
+}
+main .bottom-main .left-section .col > .row {
+    height: 60px;
+}
+main .bottom-main .left-section .col > .row img {
+    height: 10%;
 }
 /***********************
 header
@@ -88,5 +107,11 @@ RESPONSIVE
     }
     main .screen-none {
         display: block;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        display: none   ;
     }
 }
