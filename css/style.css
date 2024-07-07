@@ -59,7 +59,7 @@ main main .bottom-main {
 main main .top-main .color-bg-top-main {
     border-radius: 10px;
 }
-main aside .screen-none {
+main .screen-none {
     display: none;
 }
 /***********************
@@ -74,13 +74,19 @@ main
 RESPONSIVE
 ***********************/
 @media screen and (max-width: 768px) {
+    body main > main {
+        width: 100%;
+    }
     body main aside {
         width: 60px;
     }
-    main aside .screen-block {
+    header .screen-block {
         display: none;
     }
-    main aside .screen-none {
+    main .screen-block {
+        display: none;
+    }
+    main .screen-none {
         display: block;
     }
 }
