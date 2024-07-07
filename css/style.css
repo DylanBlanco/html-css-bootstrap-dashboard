@@ -1,35 +1,52 @@
 /***********************
 reset
 ***********************/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --header-height: 60px;
+    --aside-width: 100px;
+    --top-main-height: 80px;
+    --aside-color: #01012f;
+    --main-color: #c9c7c7;
 }
 
 /***********************
-debug
+color
 ***********************/
-.debug header {
-    background-color: sandybrown;
-    border: 1px dashed black;
+body main > aside {
+    background-color: var(--aside-color);
 }
-.debug main {
-    background-color: coral;
-    border: 1px dashed black;
-}
-.debug footer {
-    background-color: grey;
-    border: 1px dashed black;
+body main > main {
+    background-color: var(--main-color);
 }
 
+body main aside li {
+    color: white;
+}
 /***********************
 general
 ***********************/
-.container{
-    margin: 0 auto;
+.container {
+    height: var(--header-height);
 }
-
+ul {
+    list-style: none;
+    gap: 30px;
+}
+body > main {
+    height: calc(100vh - var(--header-height));
+}
+body main > aside {
+    width: var(--aside-width);
+}
+body main > main {
+    width: calc(100% - var(--aside-width));
+}
+main main .top-main {
+    height: var(--top-main-height);
+}
+main main .bottom-main {
+    height: calc(100% - var(--top-main-height));
+}
 /***********************
 header
 ***********************/
