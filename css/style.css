@@ -122,3 +122,22 @@ RESPONSIVE
         display: none   ;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .screen-mobile-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-main {
+        height: 100%;
+    }
+    .bottom-main {
+        height: calc(100% - 200px);
+    }
+    .screen-mobile {
+        display: flex;
+    }
+    .screen-block-mobile {
+        display: none;
+    }
+}

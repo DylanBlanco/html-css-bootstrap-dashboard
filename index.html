@@ -18,16 +18,16 @@
         <header>
             <div class="container-fluid text-center">
                 <div class="row align-items-center col">
-                    <div class="col-3 text-start">
+                    <div class="col-2 text-start">
                         <img src="./img/logo.svg" alt="logo">
                     </div>
                 
-                    <div class="col-6">
-                        <input type="text">
+                    <div class="col-8">
+                        <input class="w-100 bg-body-secondary text-secondary border-0 " type="search" placeholder="Prova a cercare: Lezioni di Laravel">
                     </div>
                 
-                    <div class="col-3">
-                        <ul class="d-flex justify-content-end">
+                    <div class="col-2">
+                        <ul class="d-flex justify-content-around">
                             <li>
                                 <i class="fa-solid fa-list text-secondary screen-block"></i>
                             </li>
@@ -45,40 +45,44 @@
                 </div>
             </div>
         </header>
+
         <!--MAIN-->
         <main class="d-flex">
+
             <!--ASIDE-->
             <aside>
-                <div class="row screen-block">
-                    <div class="col">
-                        <ul class="fa-ul">
-                            <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span> Stats</a></li>
-                            <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-house"></i></span> Home</a></li>
-                            <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-signal"></i></span> Signals</a></li>
-                        </ul>
+                <div class="container-fluid d-flex flex-column">
+                    <div class="row screen-block">
+                        <div class="col">
+                            <ul class="fa-ul">
+                                <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span> Stats</a></li>
+                                <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-house"></i></span> Home</a></li>
+                                <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-signal"></i></span> Signals</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="row screen-none">
-                    <div class="col">
-                        <ul class="fa-ul">
-                            <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-house"></i></span></a></li>
-                            <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
-                            <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-signal"></i></a></li>
-                        </ul>
+                    <div class="row screen-none">
+                        <div class="col">
+                            <ul>
+                                <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-house"></i></span></a></li>
+                                <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                                <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-signal"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="row screen-block">
-                    <div class="col">
-                        <ul class="fa-ul">
-                            <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-gear"></i></span>Admin</a></li>
-                        </ul>
+                    <div class="row screen-block">
+                        <div class="col">
+                            <ul class="fa-ul">
+                                <li><a class="text-decoration-none text-light" href="#"><span class="fa-li"><i class="fa-solid fa-gear"></i></span>Admin</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="row screen-none">
-                    <div class="col">
-                        <ul class="fa-ul">
-                            <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-gear"></i></a></li>
-                        </ul>
+                    <div class="row screen-none">
+                        <div class="col">
+                            <ul>
+                                <li><a class="text-decoration-none text-light" href="#"><i class="fa-solid fa-gear"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -86,49 +90,51 @@
             <!--MAIN-->
             <main>
                 <!--top main-->
-                <section class="top-main">
-                    <div class="row align-items-center ">
+                <section class="top-main container-fluid">
+                    <div class="row p-3 screen-mobile-column">
                         <div class="col-6">
-                            <ul class="d-flex align-items-center gap-2">
+                            <ul class="d-flex align-items-center gap-2 my-0">
                                 <li>
-                                    <h1 class="fs-2">Boolean</h1>
+                                    <h1 class="fs-2 text-light">Boolean</h1>
                                 </li>
-                                <li class="p-1 color-bg-top-main">
+                                <li class="color-bg-top-main">
                                     <span>Piano blaze</span>
                                 </li>
                             </ul>
-                            <ul class="d-flex align-items-center gap-2">
-                                <li class="p-1 lh-1 color-bg-top-main">
+                            <ul class="d-flex gap-2">
+                                <li class="color-bg-top-main">
                                     <span>3 app</span>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-angles-right"></i>
                                 </li>
-                                <li class="p-1 lh-1 color-bg-top-main screen-block">
+                                <li class="color-bg-top-main screen-block">
                                     <span>Boolean mobile app</span>
                                 </li>
-                                <li class="p-1 lh-1 color-bg-top-main screen-block">
+                                <li class="color-bg-top-main screen-block">
                                     <span>Boolean web app</span>
                                 </li>
-                                <li class="p-1 lh-1 color-bg-top-main screen-block">
+                                <li class="color-bg-top-main screen-block">
                                     <span>Boolean blog app</span>
                                 </li>
-                                <li class="p-1 lh-1 color-bg-top-main screen-none">
+                                <li class="color-bg-top-main screen-none">
                                     <span>+3</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-4">
                             <ul>
-                                <li>Studenti online negli ultimi 30 muniti</li>
-                                <li><h1>125</h1></li>
+                                <li class="text-light">Studenti online negli ultimi 30 muniti</li>
+                                <li><h1 class="text-light">125</h1></li>
                             </ul>
                         </div>
                         <div class="col-2">
-                            <ul class="d-flex">
-                                <li>Nuovo Studente</li>
+                            <ul class="d-flex align-items-center">
+                                <li class="text-light">
+                                    Nuovo Studente
+                                </li>
                                 <li>
-                                    +
+                                    <i class="fa-regular fa-square-plus text-light fs-3"></i>
                                 </li>
                             </ul>
                         </div>
@@ -136,15 +142,16 @@
                 </section>
 
                 <!--bottom main-->
-                <section class="bottom-main d-flex">
+                <section class="bottom-main container-fluid d-flex">
                     <!--left main section-->
                     <div class="left-section p-2">
 
                         <!--top left section-->
                         <div class="row px-2">
                             <div class="col bg-light">
+
                                 <!--riga titolo-->
-                                <div class="row border-bottom border-secondary py-2">
+                                <div class="row bg-body-secondary border-bottom border-secondary py-2">
                                     <div class="col">
                                         <h2>Prossime Classi</h2>
                                     </div>
@@ -161,10 +168,10 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p class="fw-bold">Data inzio</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p class="fw-bold">ROI</p>
                                             </div>
                                             <div class="col-3 text-center">
@@ -189,16 +196,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>15 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-success text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -218,16 +225,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>16 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-success text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -247,16 +254,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>17 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-warning text-light">process</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -276,16 +283,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>18 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-success text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -305,16 +312,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>19 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-danger text-light">failed</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -334,16 +341,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-success text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -363,16 +370,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>21 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-danger text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -392,16 +399,16 @@
                                     </div>
                                     <div class="col-7">
                                         <div class="row">
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>22 Feb 2021</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-block-mobile">
                                                 <p>20%</p>
                                             </div>
                                             <div class="col-3 text-center">
                                                 <p class="border rounded p-0 bg-success text-light">Done</p>
                                             </div>
-                                            <div class="col-3 text-center">
+                                            <div class="col-3 text-center screen-mobile">
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-pen"></i></button>
                                                 <button class="text-secondary rounded"><i class="fa-solid fa-trash"></i></button>
                                             </div>
@@ -415,7 +422,7 @@
                         <div class="row px-2 pt-5">
                             <div class="col bg-light">
                                 <!--riga titolo-->
-                                <div class="row border-bottom border-secondary py-2">
+                                <div class="row bg-body-secondary border-bottom border-secondary py-2">
                                     <div class="col">
                                         <h2>F.A.Q.</h2>
                                     </div>
@@ -455,7 +462,89 @@
                     </div>
 
                     <!--right section main-->
-                    <div class="right-section">21</div>
+                    <div class="right-section p-2">
+
+                        <!--top right section-->
+                        <div class="row px-2 mb-5">
+                            <div class="col bg-light">
+
+                                <!--riga titolo-->
+                                <div class="row bg-body-secondary border-bottom border-secondary py-2">
+                                    <div class="col">
+                                        <h2>Todo</h2>
+                                    </div>
+                                </div>
+
+                                <div class="box my-3 px-3 border">
+                                    <!--riga check-->
+                                    <div class="row border-bottom py-2">
+                                        <div class="col">
+                                            <input type="checkbox"> Come aggiungere un nuovo studente?
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row border-bottom py-2">
+                                        <div class="col">
+                                            <input type="checkbox"> Lezione su Bootstrap 5 in classe #75
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row py-2">
+                                        <div class="col">
+                                            <input type="checkbox"> Controllare username su github Studenti
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--bottom right section-->
+                        <div class="row px-2">
+                            <div class="col bg-light">
+                                <div class="box my-3 px-3 border">
+                                    
+                                    <!--riga grafico-->
+                                    <div class="row border-bottom py-2">
+                                        <div class="col">
+                                            <img class="mb-4" src="./img/stats.jpeg" alt="grafico">
+                                            <h4>Utenti Attivi</h4>
+                                            <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row border-bottom">
+                                        <div class="col">
+                                            <p>Gennaio: 1200</p>
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row border-bottom">
+                                        <div class="col">
+                                            <p>Febbraio: 800</p>
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row border-bottom">
+                                        <div class="col">
+                                            <p>Marzo: 1500</p>
+                                        </div>
+                                    </div>
+
+                                    <!--riga check-->
+                                    <div class="row py-2">
+                                        <div class="col">
+                                            <a href="#">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </main>
