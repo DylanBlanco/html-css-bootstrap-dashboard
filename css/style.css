@@ -4,7 +4,7 @@ reset
 :root {
     --header-height: 60px;
     --aside-width: 120px;
-    --top-main-height: 120px;
+    --top-main-height: ;
     --aside-color: #01012f;
     --main-color: #c9c7c7;
     --color-bg-top-main: #1966d9;
@@ -54,6 +54,10 @@ ul {
     list-style: none;
     gap: 30px;
 }
+.top-main button {
+    background-color: var(--color-bg-top-main);
+    border: none;
+}
 body > main {
     height: calc(100% - var(--header-height));
 }
@@ -88,13 +92,6 @@ main .bottom-main .left-section .col > .row {
 main .bottom-main .left-section .col > .row img {
     height: 10%;
 }
-/***********************
-header
-***********************/
-
-/***********************
-main
-***********************/
 
 /***********************
 RESPONSIVE
@@ -104,7 +101,7 @@ RESPONSIVE
         width: 100%;
     }
     body main aside {
-        width: 60px;
+        width: 80px;
     }
     header .screen-block {
         display: none;
